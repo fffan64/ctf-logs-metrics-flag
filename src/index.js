@@ -62,6 +62,7 @@ Disallow.forEach((path) => {
 
 // // copy the flag in a random dir
 const FLAG = process.env.FLAG;
+fs.writeFileSync('my_fl4g.lol', FLAG);
 const correctFlagPath = `${Disallow.find((x) => x.includes('sensitive'))}my_fl4g.lol`;
 const fullPathFlag = `${__dirname}${correctFlagPath}`;
 console.log(correctFlagPath);
