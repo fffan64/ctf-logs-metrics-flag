@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <!-- <div>
+    <p>full path of flag is:</p>
+    <input id="val" type="text" />
+    <p><button onclick="check()">check</button></p>
+  </div> -->
+
+  <form action="/proxy" method="POST">
+    <div>
+      <label for="value">full path of flag is:</label>
+      <input name="value" id="val" type="text" />
+    </div>
+    <button type="submit">check!</button>
+  </form>
+
+  <script>
+    // function check() {
+    //   const options = {
+    //     method: 'POST',
+    //     body: `path=${encodeURIComponent(document.getElementById('val').value)}`, 
+    //   };
+    //   fetch('/proxy', options)
+    //     .then((response) => {
+    //       return response.json();
+    //     })
+    //     .then((data) => {
+    //       console.log(data);
+    //     })
+    //     .catch((error) => {
+    //       console.log(error);
+    //     });
+    // }
+  </script>
+
+</body>
+
+</html>
